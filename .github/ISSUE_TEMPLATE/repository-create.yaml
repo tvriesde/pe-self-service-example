@@ -6,10 +6,6 @@ projects: ["tvriesde/Platform Team"]
 assignees:
   - octocat
 body:
-  - type: input
-    id: app_name
-      label: Application Name
-      description: Choose an application name
   - type: dropdown
     id: version
     attributes:
@@ -22,3 +18,11 @@ body:
       default: 0
     validations:
       required: true
+  - type: input
+    id: app_name
+    attributes:
+      label: app_name
+      description: app name
+      placeholder: 
+    validations:
+      required: false
