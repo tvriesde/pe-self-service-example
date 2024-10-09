@@ -1,0 +1,24 @@
+name: New Repository
+description: Create new repository in Organization
+title: "[New Repository]: "
+labels: ["Repository Create"]
+projects: ["tvriesde/Platform Team"]
+assignees:
+  - octocat
+body:
+  - type: input
+    id: app_name
+      label: Application Name
+      description: Choose an application name
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: Choose starter template
+      options:
+        - Empty
+        - AppServices .NET
+        - Container App .NET
+      default: 0
+    validations:
+      required: true
